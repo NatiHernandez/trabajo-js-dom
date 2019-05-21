@@ -207,3 +207,9 @@ button{
     height: 40px;
     cursor: pointer;
 }
+
+.modal{ 
+  background: black;
+  opacity: 0.3;
+
+}

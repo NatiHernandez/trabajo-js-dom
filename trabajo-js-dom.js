@@ -81,7 +81,10 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
                             
                     function modal (){
                       //CREAR EL MODAL
-                      
+                      const modal = document.createElement('div');
+                      const body = document.querySelector('body');
+                      body.appendChild(modal)
+                      body.classList.add('modal')
                       console.log("hola cajita")
                     }
                     }
