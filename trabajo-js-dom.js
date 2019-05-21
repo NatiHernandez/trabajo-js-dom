@@ -158,3 +158,17 @@ let paginaActual=1;
        })
    }
 
+   document.querySelector('.logoAda').onclick = function() {myOtraFunction()};
+
+ 
+    function myOtraFunction() {
+     document.querySelector('.primer').classList.remove('noDisplay');
+     document.querySelector('.tercera').classList.remove('noDisplay');
+     document.querySelector('.cuarta').classList.remove('noDisplay');
+     document.querySelector('.quinta').classList.remove('noDisplay');
+// como hacer para que se borren las cajas
+      
+    
+    }
+
+    
