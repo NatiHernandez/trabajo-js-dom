@@ -76,12 +76,21 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
           for (let i= 0; i<indice.length; i++){
           if(i<5){
                    div.innerHTML +=`<div class="cajita"> <img src="https://image.tmdb.org/t/p/original${indice[i].poster_path}" alt=""></div>`;
+                  
+                   document.querySelector('.papaCaja .cajita').onclick = function () {modal ()}; 
+                            
+                    function modal (){
+                      //CREAR EL MODAL
+                      
+                      console.log("hola cajita")
+                    }
                     }
           }
-             
-      })
+
+        })
+        
       
-      
+           
   document.querySelector('.uno').onclick = function() {myFunction()};
   document.querySelector('.conFlexBox .viewAll').onclick = function() {myFunction()};
 
@@ -161,14 +170,12 @@ let paginaActual=1;
    document.querySelector('.logoAda').onclick = function() {myOtraFunction()};
 
  
-    // function myOtraFunction() {
-    //  document.querySelector('.primer').classList.remove('noDisplay');
-    //  document.querySelector('.tercera').classList.remove('noDisplay');
-    //  document.querySelector('.cuarta').classList.remove('noDisplay');
-    //  document.querySelector('.quinta').classList.remove('noDisplay');
+    function myOtraFunction() {
+     document.querySelector('.primer').classList.remove('noDisplay');
+     document.querySelector('.tercera').classList.remove('noDisplay');
+     document.querySelector('.cuarta').classList.remove('noDisplay');
+     document.querySelector('.quinta').classList.remove('noDisplay');
 // como hacer para que se borren las cajas
-      
-    
-    // }
+       }
 
     
