@@ -29,6 +29,9 @@ body {
   width: 36px;
 }
 
+.logoAda{
+  cursor: pointer;
+}
 
 .horizontal{
   margin-top: 75px;
@@ -94,6 +97,7 @@ input{
   margin-left: 24px;
   margin-top: 18px;
   opacity: 1;
+  cursor: pointer;
 }
 
  #icon_top_rated{
@@ -101,6 +105,7 @@ input{
   margin-left: 24px;
   margin-top: 18px;
   opacity: 1;
+  cursor: pointer;
 }
 
 #icon_upcoming{
@@ -108,6 +113,7 @@ input{
   margin-left: 24px;
   margin-top: 18px;
   opacity: 1;
+  cursor: pointer;
 } 
 
 #icon_now_playing{
@@ -115,6 +121,7 @@ input{
   margin-left: 24px;
   margin-top: 18px;
   opacity: 1;
+  cursor: pointer;
 } 
 
 
@@ -146,6 +153,7 @@ input{
   margin-top: 25px;
   margin-left: 80px;
   margin-right: 70px;
+  cursor: pointer;
 }
 
 .conFlexBox{
@@ -156,6 +164,7 @@ input{
 .cajita{
   width: 200px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .papaCaja{

@@ -4,6 +4,7 @@
 
 const apiKey= 'a62c1b6c10babde2206b6dab88c018a0';
 
+
 fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
    .then(res => /* return */ res.json())
    .then(data => {
@@ -126,6 +127,9 @@ let paginaActual=1;
         
       }
     })
+
+    const cursor = document.getElementsByName('imagen')
+    cursor.style.cursor = 'pointer';
   
 // como hacer que paginaActual varie solo de nro.
 
