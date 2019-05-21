@@ -1,0 +1,199 @@
+body {
+  margin: 0px;
+}
+
+.menu {
+  height: 75px;
+  width: 100vw;
+  display: flex; 
+  position: fixed;
+  z-index: 1; 
+}
+.cuerpo{
+  width: 100vw;
+  height: 1000px;
+  background-color: white;  
+  display: flex;
+}
+
+.cuadrado{
+  width: 95px;
+  height: 75px;
+  background-color: black;
+  position: fixed;
+}
+
+.cuadrado img{
+  margin-left: 26px;
+  margin-top: 15px;
+  width: 36px;
+}
+
+
+.horizontal{
+  margin-top: 75px;
+  width: 90px;
+  height: 75px;;
+  background-color: white;
+  position: fixed;
+  z-index: 0
+}
+
+.parte{
+  margin-top: 55px;
+  margin-left: 95px;
+  width: 1254px;
+  height: 380px;
+
+}
+
+.primer{
+  position: relative;
+}
+
+.imagen{
+  width: 89px;
+  height: 95px;
+  margin-left: 6px;  
+  border-bottom: 0.2px solid rgb(248, 244, 244);
+}
+
+input{
+  width: 800px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 15px;
+  border: none;
+  color: black;
+  font-size: 16px;
+}
+
+.input{
+  background-color: white;
+  width: 100%;
+  margin-left: 95px;
+}
+
+.primeraparte{
+  height: 384px;
+  width: 100%;
+  background-color: white;
+}
+
+.batman{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  object-fit: cover;
+}
+
+
+#icon_popular{
+  width: 35px;
+  margin-left: 24px;
+  margin-top: 18px;
+  opacity: 1;
+}
+
+ #icon_top_rated{
+  width: 35px;
+  margin-left: 24px;
+  margin-top: 18px;
+  opacity: 1;
+}
+
+#icon_upcoming{
+  width: 35px;
+  margin-left: 24px;
+  margin-top: 18px;
+  opacity: 1;
+} 
+
+#icon_now_playing{
+  width: 35px;
+  margin-left: 24px;
+  margin-top: 18px;
+  opacity: 1;
+} 
+
+
+.letra{
+  color: black;
+  font-size: 11px;
+  margin-left:15px;
+  margin-top: 15px;
+  font-family: Roboto,sans-serif;
+}
+
+.cambiar{
+  margin-left: 8px;
+}
+ 
+
+.titulo{
+  color: black;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=trabajo-js-dom.css.maoboto,sans-serif;p */
+
+.viewAll{
+  color: black;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 80px;
+  margin-right: 70px;
+}
+
+.conFlexBox{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.cajita{
+  width: 200px;
+  margin-left: 20px;
+}
+
+.papaCaja{
+  display: flex;
+  justify-content: space-between;   
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.cajita img{
+  width:180px;
+  height: auto;
+  margin: 20px;
+}
+
+.textoBatman{
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  color: black;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.noDisplay{
+  display: none;
+}
+
+button{
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 150px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    height: 40px;
+}
