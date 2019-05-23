@@ -82,8 +82,10 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
                     function modal (){
                       //CREAR EL MODAL
                       const modal = document.createElement('div');
+
                       const body = document.querySelector('body');
                       body.appendChild(modal)
+
                       body.classList.add('modal')
                       console.log("hola cajita")
                     }
@@ -123,10 +125,12 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
       document.querySelector('.conFlexBox .viewAll').onclick = function hola( ){};
 
 
-let paginaActual=1;
 
+    let paginaActual=1;
 
   boton.onclick = function mostrar(){
+    
+    paginaActual+=1
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${paginaActual}`)
     .then( res =>  res.json())
     .then( data => {
