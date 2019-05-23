@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  position: relative;
 }
 
 .menu {
@@ -197,8 +198,7 @@ input{
 }
 
 button{
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: 550px;
     width: 150px;
     background: black;
     color: white;
@@ -209,7 +209,18 @@ button{
 }
 
 .modal{ 
-  background: black;
-  opacity: 0.3;
+    width: 100vw;
+    height: 600px;
+    background: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 10px;
+}
 
+.modalDos{
+  width: 800px;
+  height: 100%;
+  background: white;
+  margin: auto;
+  stop-opacity: initial;
 }

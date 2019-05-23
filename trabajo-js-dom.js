@@ -81,12 +81,15 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
                             
                     function modal (){
                       //CREAR EL MODAL
+                
                       const modal = document.createElement('div');
+                      const modalDos = document.createElement('div');
 
                       const body = document.querySelector('body');
                       body.appendChild(modal)
-
-                      body.classList.add('modal')
+                      modal.appendChild(modalDos)
+                      modal.classList.add('modal')
+                      modalDos.classList.add('modalDos')
                       console.log("hola cajita")
                     }
                     }
@@ -182,6 +185,7 @@ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
      document.querySelector('.tercera').classList.remove('noDisplay');
      document.querySelector('.cuarta').classList.remove('noDisplay');
      document.querySelector('.quinta').classList.remove('noDisplay');
+   
 // como hacer para que se borren las cajas
        }
 
