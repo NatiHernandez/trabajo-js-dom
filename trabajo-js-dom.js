@@ -22,6 +22,44 @@ const div = document.querySelector(`.${numeroDeCaja} .papaCaja`);
 
 }
 
+function modal (){
+  //CREAR EL MODAL
+ const modal = document.querySelector('.modal');
+ modal.classList.remove('noDisplay')
+ fetch(`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
+      .then(res => res.json())
+      .then(data => {
+        const indice = data.results;
+
+
+
+        ///INTENTO OBTENER EL ID DE LA CAJITA EN LA QUE HAGO CLICK Y ME TIRA EL DE LA ULTIMA CAJITA DE LA PAGINA(EL DE LA POSICION 19)
+      for(let i=0; i < indice.length; i++ )  {
+        const tituloModal = document.querySelector('.tituloModal');
+        tituloModal.innerHTML = indice[i].id;
+      }      
+
+
+      })
+
+
+
+
+ modal.onclick  = function salir (){
+  var modal = document.querySelector('.modal');
+  modal.classList.add('noDisplay')
+
+
+}
+}
+
+//funcino para ponerle la clase CAJITA a las cajitas
+
+const cajitas =  document.querySelectorAll('.cajita')          
+      for( let i =0; i< cajitas.length; i++){  
+                cajitas[i].onclick = function () {modal ()};          
+          }
+
 //POPULAR
 fetchear (`http://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`, 'segunda');
 //TOP RATED
@@ -53,21 +91,9 @@ fetchear (`https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}`, 'cuar
                     
                     cajitas[i].onclick = function () {modal ()}; 
                             
-                    function modal (){
-                      //CREAR EL MODAL
-                
-                      const modal = document.createElement('div');
-                      const modalDos = document.createElement('div');
-
-                      const body = document.querySelector('body');
-                      body.appendChild(modal)
-                      modal.appendChild(modalDos)
-                      modal.classList.add('modal')
-                      modalDos.classList.add('modalDos')
-                      console.log("hola cajita")
-                    }}
+                   
                     }
-          }
+          }}
 
         })
         

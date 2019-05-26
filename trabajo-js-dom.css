@@ -181,7 +181,7 @@ input{
   margin: 20px;
 }
 
-img:hover{
+.cajita img:hover{
   margin-top: 14px;
 }
 
@@ -228,3 +228,14 @@ button{
   margin-top: 90px;
 }
 
+.tituloModal{
+  width: 800px;
+  height: 40%;
+  background-image: URL(https://image.tmdb.org/t/p/original)
+}
+
+.cuerpoModal{
+  width: 800px;
+  height: 60%;
+  background: blue;
+}
